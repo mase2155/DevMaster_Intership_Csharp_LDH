@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36429.23 d17.14
+VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevMaster_Intership_Csharp_LDH", "DevMaster_Intership_Csharp_LDH.csproj", "{E1D92B71-D33A-489D-9AB3-961AA1FA19F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01.OrderCalculator", "..\Ex01.OrderCalculator\Ex01.OrderCalculator.csproj", "{2047A9C2-5674-4C17-BDF2-8921851F7B06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E1D92B71-D33A-489D-9AB3-961AA1FA19F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1D92B71-D33A-489D-9AB3-961AA1FA19F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1D92B71-D33A-489D-9AB3-961AA1FA19F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2047A9C2-5674-4C17-BDF2-8921851F7B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2047A9C2-5674-4C17-BDF2-8921851F7B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2047A9C2-5674-4C17-BDF2-8921851F7B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2047A9C2-5674-4C17-BDF2-8921851F7B06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

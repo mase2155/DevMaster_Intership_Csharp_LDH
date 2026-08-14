@@ -32,13 +32,8 @@ namespace Ex02.ArrayProcessing
                 numberOfArray = int.Parse(Console.ReadLine()); 
             }
             int[] array = new int[numberOfArray];
-            for(int i = 0;i< array.Length;i++)
-            {
-                Console.Write("Phần tử của mảng là : ");
-                array[i] = int.Parse(Console.ReadLine());
-            }
-            Console.Write("Vậy mảng hiện tại là : ");
             ArrayHelper arrayToUse = new ArrayHelper();
+            arrayToUse.PrintEachElement(array);
             arrayToUse.ShowArray(array);
 
             //Console.WriteLine();
@@ -66,8 +61,21 @@ namespace Ex02.ArrayProcessing
             //Console.Write("Các phần tử là số nguyên tố là : ");
             //arrayToUse.PrintPrimeNumbers(array);
 
+            //Console.WriteLine();
+            //Console.WriteLine("---- 7. Sắp xếp tăng dần    ");
+            //arrayToUse.AscendArray(array);
+            //arrayToUse.PrintAscendArray(array);
+
+            //Console.WriteLine();
+            //Console.WriteLine("---- 8. Sắp xếp giảm dần    ");
+            //arrayToUse.DescendArray(array);
+            //arrayToUse.PrintDescendArray(array);
+
             Console.WriteLine();
-            Console.WriteLine("---- 7. Sắp xếp tăng dần    ");
+            Console.WriteLine("---- 9. Tìm kiếm một giá trị    ");
+            Console.Write("Hãy nhập giá trị bạn muốn tìm : ");
+            int elementToSearch = int.Parse(Console.ReadLine());
+
         }
     }
 }

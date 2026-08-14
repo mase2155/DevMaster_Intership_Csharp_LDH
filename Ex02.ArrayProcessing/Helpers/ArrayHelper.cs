@@ -8,14 +8,21 @@ namespace Ex02.ArrayProcessing.Helpers
 {
      class ArrayHelper
     {
+        public void PrintEachElement(int[]array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write("Phần tử của mảng là : ");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+        }
         public void ShowArray(int[] array)
         {
-
+            Console.Write("Vậy mảng hiện tại là : ");
             foreach ( int number in array)
             {
                 Console.Write(number + "  ");
             }
-            
         }
         public int SumArray(int[] array)
         {
@@ -112,27 +119,55 @@ namespace Ex02.ArrayProcessing.Helpers
             }
             Console.WriteLine();
         }
-        public void SortArray(int[] array)
+        public void AscendArray(int[] array)
         {
-            for (int i = 0;i < array.Length-1; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
-                for (int j = 0; j < array.Length; j++)
+                for (int j = 0; j < array.Length - 1 - i; j++)
                 {
-                    if (array[i] > array[j])
+                    if (array[j] > array[j + 1])
                     {
-                        int temp = array[i];
-                        array[i] = array[j];
-                        array[j] = temp;
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
                     }
                 }
             }
         }
-        public void PrintSortArray(int[] array)
+        public void PrintAscendArray(int[] array)
         {
-           for(int i = 0;i < array.Length;i++)
+            Console.Write("Vậy mảng sau khi sắp xếp tăng dần là : ");
+           foreach(int element in array)
+           {
+                Console.Write(element + " ");
+           }
+        }
+        public void DescendArray(int[]array)
+        {
+            for (int i = 0; i < array.Length - 1; i++)
             {
-                Console.Write(array[i] + " ");
+                for (int j = 0; j < array.Length - 1 - i; j++)
+                {
+                    if (array[j] < array[j + 1])
+                    {
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
             }
+        }
+        public void PrintDescendArray(int[]array)
+        {
+            Console.Write("Vậy mảng sau khi sắp xếp giảm dần là : ");
+            foreach(int element in array)
+            {
+                Console.Write(element + " ");
+            }
+        }
+        public void SearchElement(int[]array)
+        {
+
         }
     }
 }

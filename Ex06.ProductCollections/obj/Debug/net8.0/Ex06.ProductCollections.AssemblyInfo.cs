@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ex06.ProductCollections")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ec9d91b353e04486056eaa007aa8a0feb9e57ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ba5aca33547f6081aed4f2567874f819ce810e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ex06.ProductCollections")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ex06.ProductCollections")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

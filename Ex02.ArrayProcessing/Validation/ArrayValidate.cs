@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ex02.ArrayProcessing.Validation
 {
-    internal class ArrayValidate
+    public class ArrayValidate
     {
+        public static string CheckNumbersOfArray(string prompt)
+        {
+            
+            
+        }
     }
 }

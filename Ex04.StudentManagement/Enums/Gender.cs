@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ex04.StudentManagement.Enums
 {
-    internal class Gender
+    public enum Gender
     {
+        Male = 1,
+        Female = 2,
+        Other = 3
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using System.Text;
 using Ex02.ArrayProcessing.Helpers;
+using Ex02.ArrayProcessing.Validation;
 
 namespace Ex02.ArrayProcessing
 {
@@ -29,9 +30,10 @@ namespace Ex02.ArrayProcessing
             {
                 Console.WriteLine("Có lỗi với số lượng phần tử bạn vừa nhập.");
                 Console.Write("Hãy nhập lại: ");
-                numberOfArray = int.Parse(Console.ReadLine()); 
+                numberOfArray = int.Parse(Console.ReadLine());
             }
             int[] array = new int[numberOfArray];
+            ArrayValidate arrayVValidate = new ArrayValidate(array, numberOfArray);
             ArrayHelper arrayToUse = new ArrayHelper();
             arrayToUse.PrintEachElement(array);
             arrayToUse.ShowArray(array);

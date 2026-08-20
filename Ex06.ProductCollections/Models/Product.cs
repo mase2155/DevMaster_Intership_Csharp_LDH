@@ -23,5 +23,6 @@ namespace Ex06.ProductCollections.Models
                 $"{Category,-15} | {Price,12:N0} | " +
                 $"{Quantity,5} | {Supplier,-15}";
         }
+
     }
 }

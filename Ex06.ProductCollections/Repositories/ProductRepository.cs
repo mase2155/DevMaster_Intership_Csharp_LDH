@@ -14,7 +14,7 @@ namespace Ex06.ProductCollections.Repositories
         private readonly List<Product> _products = new();
         private readonly Dictionary<string, Product> _productByID = new();
 
-        void IRepository<Product>.Add(Product entity)
+        public void Add(Product entity)
         {
             if (_productByID.ContainsKey(entity.ProductID))
             {
@@ -26,7 +26,7 @@ namespace Ex06.ProductCollections.Repositories
             _productByID.Add(entity.ProductID, entity);
         }
 
-        bool IRepository<Product>.Delete(string id)
+        public bool Delete(string id)
         {
             if (!_productByID.TryGetValue(id, out var product))
                 return false;
@@ -36,18 +36,18 @@ namespace Ex06.ProductCollections.Repositories
             return true;
         }
 
-        IReadOnlyList<Product> IRepository<Product>.GetAll()
+        public IReadOnlyList<Product> GetAll()
         {
             return _products.AsReadOnly();
         }
 
-        Product? IRepository<Product>.GetByID(string id)
+        public Product? GetByID(string id)
         {
-            _productByID.TryGetValue(id,out var product)
-                return product;
+            _productByID.TryGetValue(id, out var product);
+            return product;
         }
 
-        bool IRepository<Product>.Update(Product entity)
+        public bool Update(Product entity)
         {
             if (!_productByID.TryGetValue(entity.ProductID, out var existing))
                 return false;
@@ -59,6 +59,5 @@ namespace Ex06.ProductCollections.Repositories
             existing.Tags = entity.Tags;
             return true;
         }
-
     }
 }
